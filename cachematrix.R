@@ -36,8 +36,8 @@ cacheSolve <- function(x, ...) {
         }
         
         data <- x$getmatrixvalue()                                      #else, get the matrix value
-        inverse <- solve(data, ...)
+        valueholder <- solve(data, ...)
         x$setinverse(valueholder)
         
-        inverse                                                         #return the inverse
+        valueholder                                                     #return the inverse
 }
